@@ -1,0 +1,53 @@
+{
+ "data": "<path removed>",
+ "index": "tiles47.csv",
+ "split": "cv47\\fewshot\\fold4_n2.json",
+ "sources": [
+  {
+   "name": "",
+   "data": "${SITESHIFT_DATA}/dataset47",
+   "index": "tiles47.csv",
+   "split": "cv47\\fewshot\\fold4_n2.json",
+   "zoom": null
+  }
+ ],
+ "arch": "resnet34",
+ "name": "fewshot47/imagenet/n2/fold4",
+ "epochs": 10,
+ "patience": 0,
+ "batch": 16,
+ "lr": 0.0003,
+ "weight_decay": 0.01,
+ "warmup": 500,
+ "aug": "strong",
+ "shift": 256,
+ "ema": 0.999,
+ "zoom": null,
+ "init": null,
+ "min_tissue": 0.1,
+ "workers": 12,
+ "limit_train": 0,
+ "epoch_tiles": 10000,
+ "keep": "last",
+ "limit_val": 2000,
+ "seed": 0,
+ "recipe": "default",
+ "resume": false,
+ "train_tiles": 2130,
+ "val_tiles": 2000,
+ "versions": {
+  "python": "3.10.22",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "cudnn": 91900,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "torchvision": "0.26.0+cu128",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "pillow": "12.3.0",
+  "scipy": "1.15.3",
+  "timm": "1.0.30",
+  "transformers": "5.20.1",
+  "huggingface_hub": "2.2.0"
+ }
+}

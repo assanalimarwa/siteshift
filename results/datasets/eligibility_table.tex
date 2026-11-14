@@ -1,0 +1,24 @@
+% eligibility of further public prostate datasets (paper_figs/datasets/eligibility.md, 2026-11-04)
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lp{2.4cm}p{3.6cm}p{2.3cm}p{2.4cm}p{3.6cm}}
+\toprule
+Dataset & Specimen & Annotation & Size & Access & Verdict and reason \\
+\midrule
+AGGC22 & whole-mount prostatectomy, needle biopsy & pixel masks: stroma, normal, Gleason 3/4/5, on part of the tissue ($\approx$20\% of prostatectomy tissue) & 105 + 37 training cases (+ 144 multi-scanner images), 214 patients; size not stated & request form, links within 15 working days; CC BY-NC-SA 4.0 & \textbf{eligible}: pixel-level tumour vs non-tumour with large sections at $\approx$0.5\,\textmu m/px; unannotated tissue must be ignored \\
+Gleason2019 & TMA cores (prostatectomy) & pixel Gleason maps by 6 pathologists & 333 cores, 231 patients (244 labelled); size not stated & public links; no license, sharing forbidden & eligible with caveats: TMA cores only, no license; not used \\
+Arvaniti et al. & TMA spots (prostatectomy) & pixel masks: benign, Gleason 3/4/5, unlabelled & 886 spots; 2.6\,GB & direct download; CC0 & eligible with caveats: TMA spots only; not used \\
+PESO & prostatectomy & epithelium masks; tumour only as a label per test region & 102 slides, 102 patients; 138\,GB & direct download; CC BY-NC-SA 4.0 & not eligible: no tumour masks \\
+DiagSet & needle biopsy & patch labels only (Gleason, normal, artefact) & 430 + 4,675 + 46 scans; size not stated & registration, $<$24\,h; no license stated & not eligible: no pixel masks, no license \\
+TCGA-PRAD & prostatectomy & none (slide-level clinical Gleason) & 449 diagnostic slides, 403 patients; 438\,GB & direct download (GDC open access) & not eligible: no annotations \\
+\bottomrule
+\end{tabular}
+\caption{Further public prostate H\&E datasets considered. Selection criteria: (i) pixel-level annotations that convert
+to tumour (Gleason pattern 3--5) versus non-tumour, (ii) needle biopsies or large sections rather than tissue
+microarrays, as in our data, (iii) a pixel size that can be brought to 0.5\,\textmu m/px, and (iv) a license that allows
+research use. Information from the datasets' official pages and papers (November 2026); sizes as stated by the
+providers.}
+\label{tab:eligibility}
+\end{table*}

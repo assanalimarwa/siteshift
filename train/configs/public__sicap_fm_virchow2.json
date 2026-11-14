@@ -1,0 +1,29 @@
+{
+ "data": "<path removed>",
+ "index": "sicap_tiles.csv",
+ "split": "sicap_split.json",
+ "arch": "fm_virchow2",
+ "name": "sicap_fm_virchow2",
+ "epochs": 15,
+ "patience": 4,
+ "batch": 16,
+ "lr": 0.0003,
+ "weight_decay": 0.01,
+ "warmup": 500,
+ "aug": "strong",
+ "shift": 0,
+ "ema": 0.999,
+ "zoom": [
+  1.5,
+  2.0
+ ],
+ "init": null,
+ "min_tissue": 0.1,
+ "workers": 12,
+ "limit_train": 0,
+ "limit_val": 0,
+ "seed": 0,
+ "resume": false,
+ "train_tiles": 15818,
+ "val_tiles": 1883
+}

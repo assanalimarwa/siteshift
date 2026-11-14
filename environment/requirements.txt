@@ -1,0 +1,19 @@
+# Versions of the environment in which the models of the paper were trained and evaluated (Python 3.12.3, Linux, one NVIDIA H100).
+# PyTorch wheels: pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+# The baseline U-Net of the paper was trained in a second environment (Python 3.10, consumer GPU); see README.md, "Machines".
+torch==2.11.0
+torchvision==0.26.0
+numpy==2.2.6
+pandas==2.3.3
+pillow==12.3.0
+scipy==1.15.3
+matplotlib==3.10.9
+tifffile==2025.5.10
+timm==1.0.30
+transformers==5.20.1
+huggingface_hub==2.2.0
+safetensors==0.8.0
+tqdm==4.70.1
+imagecodecs==2025.3.30
+# needed by the report scripts that write markdown tables with pandas.to_markdown (not in the training environment):
+tabulate==0.10.0

@@ -1,0 +1,1 @@
+These are the adaptation draws used in the paper's 47-patient few-shot experiment (n = 2, 4, 8; copied from the original experiment). They replace the draws that the build had regenerated from the rule in train/run_fewshot.py (n = 1 and 'all' were not used in the paper). See README.md in this folder for the patients and for which draws belong to the public benchmark.

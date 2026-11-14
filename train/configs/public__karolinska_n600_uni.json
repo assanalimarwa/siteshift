@@ -1,0 +1,37 @@
+{
+ "data": "<path removed>",
+ "index": "karolinska_all_tiles.csv",
+ "split": "karolinska_n600_split.json",
+ "sources": [
+  {
+   "name": "",
+   "data": "${SITESHIFT_DATA}/karolinska_all",
+   "index": "karolinska_all_tiles.csv",
+   "split": "karolinska_n600_split.json",
+   "zoom": null
+  }
+ ],
+ "arch": "fm_uni",
+ "name": "karolinska_n600_uni",
+ "epochs": 15,
+ "patience": 4,
+ "batch": 16,
+ "lr": 0.0003,
+ "weight_decay": 0.01,
+ "warmup": 500,
+ "aug": "strong",
+ "shift": 256,
+ "ema": 0.999,
+ "zoom": null,
+ "init": null,
+ "min_tissue": 0.1,
+ "workers": 12,
+ "limit_train": 0,
+ "epoch_tiles": 60000,
+ "keep": "best",
+ "limit_val": 20000,
+ "seed": 0,
+ "resume": false,
+ "train_tiles": 86063,
+ "val_tiles": 20000
+}

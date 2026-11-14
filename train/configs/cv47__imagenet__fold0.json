@@ -1,0 +1,37 @@
+{
+ "data": "<path removed>",
+ "index": "tiles47.csv",
+ "split": "cv47\\fold0.json",
+ "sources": [
+  {
+   "name": "",
+   "data": "<path removed>",
+   "index": "tiles47.csv",
+   "split": "cv47\\fold0.json",
+   "zoom": null
+  }
+ ],
+ "arch": "resnet34",
+ "name": "cv47/imagenet/fold0",
+ "epochs": 40,
+ "patience": 8,
+ "batch": 16,
+ "lr": 0.0003,
+ "weight_decay": 0.01,
+ "warmup": 500,
+ "aug": "strong",
+ "shift": 256,
+ "ema": 0.999,
+ "zoom": null,
+ "init": null,
+ "min_tissue": 0.1,
+ "workers": 12,
+ "limit_train": 0,
+ "epoch_tiles": 60000,
+ "keep": "best",
+ "limit_val": 20000,
+ "seed": 0,
+ "resume": false,
+ "train_tiles": 304134,
+ "val_tiles": 20000
+}

@@ -1,0 +1,52 @@
+{
+ "data": "<path removed>",
+ "index": "tiles.csv",
+ "split": "split.json",
+ "sources": [
+  {
+   "name": "SICAPv2",
+   "data": "${SITESHIFT_DATA}/sicapv2",
+   "index": "sicap_tiles.csv",
+   "split": "sicap_split.json",
+   "zoom": [
+    1.5,
+    2.0
+   ]
+  },
+  {
+   "name": "Karolinska",
+   "data": "${SITESHIFT_DATA}/karolinska_all",
+   "index": "karolinska_all_tiles.csv",
+   "split": "karolinska_all_split.json"
+  },
+  {
+   "name": "Radboud",
+   "data": "${SITESHIFT_DATA}/radboud",
+   "index": "radboud_tiles.csv",
+   "split": "radboud_split.json"
+  }
+ ],
+ "arch": "fm_uni",
+ "name": "all_public_uni",
+ "epochs": 15,
+ "patience": 4,
+ "batch": 16,
+ "lr": 0.0003,
+ "weight_decay": 0.01,
+ "warmup": 500,
+ "aug": "strong",
+ "shift": 256,
+ "ema": 0.999,
+ "zoom": null,
+ "init": null,
+ "min_tissue": 0.1,
+ "workers": 12,
+ "limit_train": 0,
+ "epoch_tiles": 60000,
+ "keep": "best",
+ "limit_val": 20000,
+ "seed": 0,
+ "resume": false,
+ "train_tiles": 807441,
+ "val_tiles": 15215
+}
